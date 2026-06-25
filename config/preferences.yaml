@@ -1,0 +1,31 @@
+# AI OS (Local Edition) — Runtime Preferences
+# Read by Claude at skill execution time (not imported by scripts).
+
+# General
+timezone: "Europe/Paris"                 # Set during business-setup (e.g., "Europe/Paris", "America/New_York")
+date_format: "YYYY-MM-DD"
+language: "fr"                  # Cindy Brunel — French (MDF)
+
+# Model routing defaults
+default_model: "opus"           # For complex reasoning
+automation_model: "sonnet"      # For routine automation skills
+quick_model: "haiku"            # For simple formatting/classification
+
+# Content defaults
+content_platforms: [linkedin, blog]   # MDF — LinkedIn (profil Cindy + page MDF) et blog du site
+post_length: "medium"           # short (~300 chars), medium (~600 chars), long (~1200 chars)
+
+# Tools
+task_manager: "none"            # Options: todoist, notion, or none
+calendar: "none"                # Options: google-calendar, or none
+email: "none"                   # Options: gmail, or none
+
+# Communication
+confirm_before_sending: true    # Always confirm before external communications
+verbose_output: false           # Detailed vs concise output
+
+# Workflow
+scrum_mode: false               # AI acts as scrum manager — plan, track, automate
+
+# Identity
+assistant_name: "AI OS"         # Optional: give your AI assistant a name

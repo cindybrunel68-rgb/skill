@@ -1,0 +1,52 @@
+{
+  "name": "ai-os-local",
+  "version": "2.0.0-local",
+  "description": "AI OS (Local Edition) — Turn Claude Code in VS Code into your AI business assistant with skills, agents, file-based memory, and safety hooks. No server, no webapp, no deployment.",
+  "author": "Thomas Berton (https://thomas-berton.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_USERNAME/ai-os-local",
+  "skills": [
+    "analyst",
+    "build-app",
+    "build-website",
+    "business-setup",
+    "content-pipeline",
+    "content-writer",
+    "email-assistant",
+    "email-digest",
+    "gamma-slides",
+    "meeting-prep",
+    "memory",
+    "plugin-builder",
+    "research",
+    "research-lead",
+    "scheduler",
+    "scrum-master",
+    "skill-creator",
+    "task-manager",
+    "weekly-review"
+  ],
+  "agents": [
+    "researcher",
+    "content-writer",
+    "code-reviewer"
+  ],
+  "hooks": {
+    "Stop": [".claude/hooks/memory_capture.py"],
+    "PreToolUse": [".claude/hooks/guardrail_check.py"],
+    "PostToolUse": [".claude/hooks/validate_output.py"]
+  },
+  "requires": {
+    "claude-code": ">=1.0.0",
+    "python": ">=3.9"
+  },
+  "keywords": [
+    "ai-os",
+    "local",
+    "business-automation",
+    "skills",
+    "agents",
+    "memory",
+    "hooks"
+  ]
+}

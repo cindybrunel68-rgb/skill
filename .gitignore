@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+.env.bak.*
+data/.creds/
+
+# Runtime data — no value in versioning
+data/conversation_history.json
+data/mem0_history.db
+data/reminders.json
+data/auto_capture.log
+data/capture_markers/
+data/session_markers/
+data/backups/
+logs/
+.tmp/
+
+# Claude Code local settings (generated on first run)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
